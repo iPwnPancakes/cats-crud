@@ -1,7 +1,12 @@
 import express from "express";
 import { Cat } from "../models/cat.js";
 
-const cats = [new Cat(1, "Whiskers"), new Cat(2, "Fluffy"), new Cat(3, "Mittens")];
+const cats = [
+  new Cat(4, "Pancake", new Date("2015-06-15")),
+  new Cat(2, "Fluffy"),
+  new Cat(1, "Whiskers"),
+  new Cat(3, "Mittens", new Date("2023-01-01")),
+];
 
 const router = express.Router();
 
